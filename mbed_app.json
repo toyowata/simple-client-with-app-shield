@@ -4,6 +4,12 @@
             "help": "options are ETHERNET,WIFI_ESP8266,MESH_LOWPAN_ND,MESH_THREAD",
             "value": "WIFI_ESP8266"
         },
+        "esp8266-ssid": {
+            "value": "\"SSID\""
+        },
+        "esp8266-password": {
+            "value": "\"Password\""
+        },
         "esp8266-tx": {
             "help": "Pin used as TX (connects to ESP8266 RX)",
             "value": "D1"
@@ -12,14 +18,8 @@
             "help": "Pin used as RX (connects to ESP8266 TX)",
             "value": "D0"
         },
-        "esp8266-ssid": {
-            "value": "\"wlan\""
-        },
-        "esp8266-password": {
-            "value": "\"PASSWORD\""
-        },
         "esp8266-debug": {
-            "value": true
+            "value": false
         },
         "button": {
             "help": "Pin which you'll use as button (can be overriden per target below)",
