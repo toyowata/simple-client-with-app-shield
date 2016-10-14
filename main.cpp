@@ -25,6 +25,9 @@ void patternUpdated(string v) {
 }
 
 void lcdTextUpdated(string v) {
+    if (v.length() > 30) {
+        v.erase(v.begin() + 30, v.end());
+    }
     printf("New text is %s\r\n", v.c_str());
 
     lcd.cls();
